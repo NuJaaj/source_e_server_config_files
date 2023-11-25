@@ -1,0 +1,34 @@
+whitelist
+{
+	// Server rules used for sv_pure.
+	//
+	// Do not modify this file.
+	//
+	// See pure_server_whitelist_example.txt for more details on when this file is used and what the rules mean.
+
+	//
+	// Require official files for most assets
+	//
+	// Valve wiki for a more precise configuration:
+	// https://developer.valvesoftware.com/wiki/Pure_Servers
+	//
+
+	sound\...                            trusted_source
+		sound\quake\...                           				allow_from_disk
+		sound\admin_plugin\...                      			allow_from_disk
+		sound\bombtimer\...                      				allow_from_disk
+		sound\jihad\...                      					allow_from_disk
+		sound\misc\...                      					allow_from_disk
+	models\...                           trusted_source
+		models\parachute\*.*									allow_from_disk
+		models\zoon\player\*.*									allow_from_disk
+	download\...                         allow_from_disk
+	materials\...                        trusted_source
+		materials\models\parachute\...							allow_from_disk
+		materials\models\player\hl2_sc_s\...					allow_from_disk
+	particles\...                        trusted_source
+	scripts\*.*													trusted_source
+	scripts\...													trusted_source
+	
+	// Config by NuJaaj
+}
