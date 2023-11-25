@@ -1,499 +1,499 @@
 whitelist
 {
-			// [===] Essential [===]
-		// ```````````````````````````
-		// The files it's not 100% complete, but will help a bit.
-		// i was just curious about how this whitelist files works
-		// feel free editing this. I recommend you reading the files
-		// pure_server_full.txt and pure_server_whitelist_example.txt
-		// and take a look in the official wiki.
-		//
-		// Valve wiki for a more precise configuration:
-		// https://developer.valvesoftware.com/wiki/Pure_Servers
-		// 
-		// ...........................
+		// [===] Essential [===]
+	// ```````````````````````````
+	// The files it's not 100% complete, but will help a bit.
+	// i was just curious about how this whitelist files works
+	// feel free editing this. I recommend you reading the files
+	// pure_server_full.txt and pure_server_whitelist_example.txt
+	// and take a look in the official wiki.
+	//
+	// Valve wiki for a more precise configuration:
+	// https://developer.valvesoftware.com/wiki/Pure_Servers
+	// 
+	// ...........................
 		
 	
 		
-			// [===]        Allowed custom mods      [===]
-			////------------------------------------------
-			//					   Weapons
-			////------------------------------------------
-		models\weapons\...						allow_from_disk 
-		models\shells\...						allow_from_disk 
-		materials\models\weapons\...			allow_from_disk 
-			////------------------------------------------
-			//				 	  Particles
-			////------------------------------------------
-		materials\particle\muzzleflash\...			allow_from_disk
-			////------------------------------------------
-			//				 	    Sound
-			////------------------------------------------
-		sound\ambient\...					allow_from_disk
-		sound\weapons\...					allow_from_disk
-			////------------------------------------------
-			//				 	  Resource
-			////------------------------------------------
-		resource\...					allow_from_disk
-		resource\ui\...					allow_from_disk
-			////------------------------------------------
-			//				 	  Scripts
-			////------------------------------------------
-		//scripts\...								allow_from_disk 
-		scripts\weapons\...								allow_from_disk
-		scripts\game_sounds_manifest.txt				allow_from_disk
-		scripts\weapon_ak47.txt				allow_from_disk
-		scripts\weapon_aug.txt				allow_from_disk
-		scripts\weapon_awp.txt				allow_from_disk
-		scripts\weapon_c4.txt				allow_from_disk
-		scripts\weapon_deagle.txt				allow_from_disk
-		scripts\weapon_elite.txt				allow_from_disk
-		scripts\weapon_famas.txt				allow_from_disk
-		scripts\weapon_fiveseven.txt				allow_from_disk
-		scripts\weapon_flashbang.txt				allow_from_disk
-		scripts\weapon_g3sg1.txt				allow_from_disk
-		scripts\weapon_galil.txt				allow_from_disk
-		scripts\weapon_glock.txt				allow_from_disk
-		scripts\weapon_hegrenade.txt				allow_from_disk
-		scripts\weapon_knife.txt				allow_from_disk
-		scripts\weapon_m3.txt				allow_from_disk
-		scripts\weapon_m4a1.txt				allow_from_disk
-		scripts\weapon_m249.txt				allow_from_disk
-		scripts\weapon_mac10.txt				allow_from_disk
-		scripts\weapon_mp5navy.txt				allow_from_disk
-		scripts\weapon_p90.txt				allow_from_disk
-		scripts\weapon_p228.txt				allow_from_disk
-		scripts\weapon_scout.txt				allow_from_disk
-		scripts\weapon_sg550.txt				allow_from_disk
-		scripts\weapon_sg552.txt				allow_from_disk
-		scripts\weapon_smokegrenade.txt				allow_from_disk
-		scripts\weapon_tmp.txt				allow_from_disk
-		scripts\weapon_ump45.txt				allow_from_disk
-		scripts\weapon_usp.txt				allow_from_disk
-		scripts\weapon_xm1014.txt				allow_from_disk
-			////------------------------------------------
-			//				 	    HUD
-			////------------------------------------------
-		materials\vgui\...					allow_from_disk
-		materials\scoreboard\...			allow_from_disk
-		materials\console\...				allow_from_disk
-		materials\sprites\...				allow_from_disk
-		materials\hud\...					allow_from_disk
-		materials\voice\...					allow_from_disk
-			////------------------------------------------
-			//				 	   Sprays
-			////------------------------------------------
-		//
-		// Testing
-		//
-		// How this lines works? it picks the "crc" i think, of .vtf spray file generated
-		// from engine and allow the upload/download of the specific file in server. 
-		// I don't know how much precise it is, but at tests looks a good way of moderating sprays in your server.
-		// Requesting a image manually for a admin, to aprove and put the file generated in the lines bellow.
-		//
-		// Comment "materials\temp\..." line bellow for disallowing any spray in your server
-		// except mentioned sprays in this whitelist lines "materials\temp\a77052b4.vtf allow_from_disk"
-		//
-		materials\temp\...					allow_from_disk 
-		materials\temp\a77052b4.vtf				allow_from_disk // allowed spray
-		materials\temp\a9bd78d4.vtf				allow_from_disk // allowed spray
-		//
-		materials\vgui\logos\...    			allow_from_disk
-		materials\vgui\logos\ui\... 			allow_from_disk
+		// [===]        Allowed custom mods      [===]
+		////------------------------------------------
+		//					   Weapons
+		////------------------------------------------
+	models\weapons\...						allow_from_disk 
+	models\shells\...						allow_from_disk 
+	materials\models\weapons\...			allow_from_disk 
+		////------------------------------------------
+		//				 	  Particles
+		////------------------------------------------
+	materials\particle\muzzleflash\...			allow_from_disk
+		////------------------------------------------
+		//				 	    Sound
+		////------------------------------------------
+	sound\ambient\...					allow_from_disk
+	sound\weapons\...					allow_from_disk
+		////------------------------------------------
+		//				 	  Resource
+		////------------------------------------------
+	resource\...					allow_from_disk
+	resource\ui\...					allow_from_disk
+		////------------------------------------------
+		//				 	  Scripts
+		////------------------------------------------
+	//scripts\...								allow_from_disk 
+	scripts\weapons\...								allow_from_disk
+	scripts\game_sounds_manifest.txt				allow_from_disk
+	scripts\weapon_ak47.txt				allow_from_disk
+	scripts\weapon_aug.txt				allow_from_disk
+	scripts\weapon_awp.txt				allow_from_disk
+	scripts\weapon_c4.txt				allow_from_disk
+	scripts\weapon_deagle.txt				allow_from_disk
+	scripts\weapon_elite.txt				allow_from_disk
+	scripts\weapon_famas.txt				allow_from_disk
+	scripts\weapon_fiveseven.txt				allow_from_disk
+	scripts\weapon_flashbang.txt				allow_from_disk
+	scripts\weapon_g3sg1.txt				allow_from_disk
+	scripts\weapon_galil.txt				allow_from_disk
+	scripts\weapon_glock.txt				allow_from_disk
+	scripts\weapon_hegrenade.txt				allow_from_disk
+	scripts\weapon_knife.txt				allow_from_disk
+	scripts\weapon_m3.txt				allow_from_disk
+	scripts\weapon_m4a1.txt				allow_from_disk
+	scripts\weapon_m249.txt				allow_from_disk
+	scripts\weapon_mac10.txt				allow_from_disk
+	scripts\weapon_mp5navy.txt				allow_from_disk
+	scripts\weapon_p90.txt				allow_from_disk
+	scripts\weapon_p228.txt				allow_from_disk
+	scripts\weapon_scout.txt				allow_from_disk
+	scripts\weapon_sg550.txt				allow_from_disk
+	scripts\weapon_sg552.txt				allow_from_disk
+	scripts\weapon_smokegrenade.txt				allow_from_disk
+	scripts\weapon_tmp.txt				allow_from_disk
+	scripts\weapon_ump45.txt				allow_from_disk
+	scripts\weapon_usp.txt				allow_from_disk
+	scripts\weapon_xm1014.txt				allow_from_disk
+		////------------------------------------------
+		//				 	    HUD
+		////------------------------------------------
+	materials\vgui\...					allow_from_disk
+	materials\scoreboard\...			allow_from_disk
+	materials\console\...				allow_from_disk
+	materials\sprites\...				allow_from_disk
+	materials\hud\...					allow_from_disk
+	materials\voice\...					allow_from_disk
+		////------------------------------------------
+		//				 	   Sprays
+		////------------------------------------------
+	//
+	// Testing
+	//
+	// How this lines works? it picks the "crc" i think, of .vtf spray file generated
+	// from engine and allow the upload/download of the specific file in server. 
+	// I don't know how much precise it is, but at tests looks a good way of moderating sprays in your server.
+	// Requesting a image manually for a admin, to aprove and put the file generated in the lines bellow.
+	//
+	// Comment "materials\temp\..." line bellow for disallowing any spray in your server
+	// except mentioned sprays in this whitelist lines "materials\temp\a77052b4.vtf allow_from_disk"
+	//
+	materials\temp\...					allow_from_disk 
+	materials\temp\a77052b4.vtf				allow_from_disk // allowed spray
+	materials\temp\a9bd78d4.vtf				allow_from_disk // allowed spray
+	//
+	materials\vgui\logos\...    			allow_from_disk
+	materials\vgui\logos\ui\... 			allow_from_disk
 		
 		
 		
-			// [===]       Blocked custom mods       [===]
-			////------------------------------------------
-			//					   Weapons
-			////------------------------------------------
-		models\weapons\w_c4.dx80.vtx								trusted_source
-		models\weapons\w_c4.dx90.vtx								trusted_source
-		models\weapons\w_c4.mdl									trusted_source
-		models\weapons\w_c4.phy									trusted_source
-		models\weapons\w_c4.sw.vtx								trusted_source
-		models\weapons\w_c4.vvd									trusted_source
-		models\weapons\w_c4_planted.dx80.vtx								trusted_source
-		models\weapons\w_c4_planted.dx90.vtx								trusted_source
-		models\weapons\w_c4_planted.mdl									trusted_source
-		models\weapons\w_c4_planted.phy									trusted_source
-		models\weapons\w_c4_planted.sw.vtx								trusted_source
-		models\weapons\w_c4_planted.vvd									trusted_source
-		models\weapons\w_defuser.dx80.vtx								trusted_source
-		models\weapons\w_defuser.dx90.vtx								trusted_source
-		models\weapons\w_defuser.mdl									trusted_source
-		models\weapons\w_defuser.phy									trusted_source
-		models\weapons\w_defuser.sw.vtx								trusted_source
-		models\weapons\w_defuser.vvd									trusted_source
-		models\weapons\w_eq_eholster.dx80.vtx								trusted_source
-		models\weapons\w_eq_eholster.dx90.vtx								trusted_source
-		models\weapons\w_eq_eholster.mdl									trusted_source
-		models\weapons\w_eq_eholster.phy									trusted_source
-		models\weapons\w_eq_eholster.sw.vtx								trusted_source
-		models\weapons\w_eq_eholster.vvd									trusted_source
-		models\weapons\w_eq_eholster_elite.dx80.vtx								trusted_source
-		models\weapons\w_eq_eholster_elite.dx90.vtx								trusted_source
-		models\weapons\w_eq_eholster_elite.mdl									trusted_source
-		models\weapons\w_eq_eholster_elite.phy									trusted_source
-		models\weapons\w_eq_eholster_elite.sw.vtx								trusted_source
-		models\weapons\w_eq_eholster_elite.vvd									trusted_source
-		models\weapons\w_eq_flashbang.dx80.vtx								trusted_source
-		models\weapons\w_eq_flashbang.dx90.vtx								trusted_source
-		models\weapons\w_eq_flashbang.mdl									trusted_source
-		models\weapons\w_eq_flashbang.phy									trusted_source
-		models\weapons\w_eq_flashbang.sw.vtx								trusted_source
-		models\weapons\w_eq_flashbang.vvd									trusted_source
-		models\weapons\w_eq_flashbang_thrown.dx80.vtx								trusted_source
-		models\weapons\w_eq_flashbang_thrown.dx90.vtx								trusted_source
-		models\weapons\w_eq_flashbang_thrown.mdl									trusted_source
-		models\weapons\w_eq_flashbang_thrown.phy									trusted_source
-		models\weapons\w_eq_flashbang_thrown.sw.vtx								trusted_source
-		models\weapons\w_eq_flashbang_thrown.vvd									trusted_source
-		models\weapons\w_eq_fraggrenade.dx80.vtx								trusted_source
-		models\weapons\w_eq_fraggrenade.dx90.vtx								trusted_source
-		models\weapons\w_eq_fraggrenade.mdl									trusted_source
-		models\weapons\w_eq_fraggrenade.phy									trusted_source
-		models\weapons\w_eq_fraggrenade.sw.vtx								trusted_source
-		models\weapons\w_eq_fraggrenade.vvd									trusted_source
-		models\weapons\w_eq_fraggrenade_thrown.dx80.vtx								trusted_source
-		models\weapons\w_eq_fraggrenade_thrown.dx90.vtx								trusted_source
-		models\weapons\w_eq_fraggrenade_thrown.mdl									trusted_source
-		models\weapons\w_eq_fraggrenade_thrown.phy									trusted_source
-		models\weapons\w_eq_fraggrenade_thrown.sw.vtx								trusted_source
-		models\weapons\w_eq_fraggrenade_thrown.vvd									trusted_source
-		models\weapons\w_eq_smokegrenade.dx80.vtx								trusted_source
-		models\weapons\w_eq_smokegrenade.dx90.vtx								trusted_source
-		models\weapons\w_eq_smokegrenade.mdl									trusted_source
-		models\weapons\w_eq_smokegrenade.phy									trusted_source
-		models\weapons\w_eq_smokegrenade.sw.vtx								trusted_source
-		models\weapons\w_eq_smokegrenade.vvd									trusted_source
-		models\weapons\w_eq_smokegrenade_thrown.dx80.vtx								trusted_source
-		models\weapons\w_eq_smokegrenade_thrown.dx90.vtx								trusted_source
-		models\weapons\w_eq_smokegrenade_thrown.mdl									trusted_source
-		models\weapons\w_eq_smokegrenade_thrown.phy									trusted_source
-		models\weapons\w_eq_smokegrenade_thrown.sw.vtx								trusted_source
-		models\weapons\w_eq_smokegrenade_thrown.vvd									trusted_source
-		models\weapons\w_knife_ct.dx80.vtx								trusted_source
-		models\weapons\w_knife_ct.dx90.vtx								trusted_source
-		models\weapons\w_knife_ct.mdl									trusted_source
-		models\weapons\w_knife_ct.phy									trusted_source
-		models\weapons\w_knife_ct.sw.vtx								trusted_source
-		models\weapons\w_knife_ct.vvd									trusted_source
-		models\weapons\w_knife_t.dx80.vtx								trusted_source
-		models\weapons\w_knife_t.dx90.vtx								trusted_source
-		models\weapons\w_knife_t.mdl									trusted_source
-		models\weapons\w_knife_t.phy									trusted_source
-		models\weapons\w_knife_t.sw.vtx								trusted_source
-		models\weapons\w_knife_t.vvd									trusted_source
-		models\weapons\w_mach_m249para.dx80.vtx								trusted_source
-		models\weapons\w_mach_m249para.dx90.vtx								trusted_source
-		models\weapons\w_mach_m249para.mdl									trusted_source
-		models\weapons\w_mach_m249para.phy									trusted_source
-		models\weapons\w_mach_m249para.sw.vtx								trusted_source
-		models\weapons\w_mach_m249para.vvd									trusted_source
-		models\weapons\w_pist_deagle.dx80.vtx								trusted_source
-		models\weapons\w_pist_deagle.dx90.vtx								trusted_source
-		models\weapons\w_pist_deagle.mdl									trusted_source
-		models\weapons\w_pist_deagle.phy									trusted_source
-		models\weapons\w_pist_deagle.sw.vtx								trusted_source
-		models\weapons\w_pist_deagle.vvd									trusted_source
-		models\weapons\w_pist_elite.dx80.vtx								trusted_source
-		models\weapons\w_pist_elite.dx90.vtx								trusted_source
-		models\weapons\w_pist_elite.mdl									trusted_source
-		models\weapons\w_pist_elite.phy									trusted_source
-		models\weapons\w_pist_elite.sw.vtx								trusted_source
-		models\weapons\w_pist_elite.vvd									trusted_source
-		models\weapons\w_pist_elite_dropped.dx80.vtx								trusted_source
-		models\weapons\w_pist_elite_dropped.dx90.vtx								trusted_source
-		models\weapons\w_pist_elite_dropped.mdl									trusted_source
-		models\weapons\w_pist_elite_dropped.phy									trusted_source
-		models\weapons\w_pist_elite_dropped.sw.vtx								trusted_source
-		models\weapons\w_pist_elite_dropped.vvd									trusted_source
-		models\weapons\w_pist_elite_single.dx80.vtx								trusted_source
-		models\weapons\w_pist_elite_single.dx90.vtx								trusted_source
-		models\weapons\w_pist_elite_single.mdl									trusted_source
-		models\weapons\w_pist_elite_single.phy									trusted_source
-		models\weapons\w_pist_elite_single.sw.vtx								trusted_source
-		models\weapons\w_pist_elite_single.vvd									trusted_source
-		models\weapons\w_pist_fiveseven.dx80.vtx								trusted_source
-		models\weapons\w_pist_fiveseven.dx90.vtx								trusted_source
-		models\weapons\w_pist_fiveseven.mdl									trusted_source
-		models\weapons\w_pist_fiveseven.phy									trusted_source
-		models\weapons\w_pist_fiveseven.sw.vtx								trusted_source
-		models\weapons\w_pist_fiveseven.vvd									trusted_source
-		models\weapons\w_pist_glock18.dx80.vtx								trusted_source
-		models\weapons\w_pist_glock18.dx90.vtx								trusted_source
-		models\weapons\w_pist_glock18.mdl									trusted_source
-		models\weapons\w_pist_glock18.phy									trusted_source
-		models\weapons\w_pist_glock18.sw.vtx								trusted_source
-		models\weapons\w_pist_glock18.vvd									trusted_source
-		models\weapons\w_pist_p228.dx80.vtx								trusted_source
-		models\weapons\w_pist_p228.dx90.vtx								trusted_source
-		models\weapons\w_pist_p228.mdl									trusted_source
-		models\weapons\w_pist_p228.phy									trusted_source
-		models\weapons\w_pist_p228.sw.vtx								trusted_source
-		models\weapons\w_pist_p228.vvd									trusted_source
-		models\weapons\w_pist_usp.dx80.vtx								trusted_source
-		models\weapons\w_pist_usp.dx90.vtx								trusted_source
-		models\weapons\w_pist_usp.mdl									trusted_source
-		models\weapons\w_pist_usp.phy									trusted_source
-		models\weapons\w_pist_usp.sw.vtx								trusted_source
-		models\weapons\w_pist_usp.vvd									trusted_source
-		models\weapons\w_pist_usp_silencer.dx80.vtx								trusted_source
-		models\weapons\w_pist_usp_silencer.dx90.vtx								trusted_source
-		models\weapons\w_pist_usp_silencer.mdl									trusted_source
-		models\weapons\w_pist_usp_silencer.phy									trusted_source
-		models\weapons\w_pist_usp_silencer.sw.vtx								trusted_source
-		models\weapons\w_pist_usp_silencer.vvd									trusted_source
-		models\weapons\w_rif_ak47.dx80.vtx								trusted_source
-		models\weapons\w_rif_ak47.dx90.vtx								trusted_source
-		models\weapons\w_rif_ak47.mdl									trusted_source
-		models\weapons\w_rif_ak47.phy									trusted_source
-		models\weapons\w_rif_ak47.sw.vtx								trusted_source
-		models\weapons\w_rif_ak47.vvd									trusted_source
-		models\weapons\w_rif_aug.dx80.vtx								trusted_source
-		models\weapons\w_rif_aug.dx90.vtx								trusted_source
-		models\weapons\w_rif_aug.mdl									trusted_source
-		models\weapons\w_rif_aug.phy									trusted_source
-		models\weapons\w_rif_aug.sw.vtx								trusted_source
-		models\weapons\w_rif_aug.vvd									trusted_source
-		models\weapons\w_rif_famas.dx80.vtx								trusted_source
-		models\weapons\w_rif_famas.dx90.vtx								trusted_source
-		models\weapons\w_rif_famas.mdl									trusted_source
-		models\weapons\w_rif_famas.phy									trusted_source
-		models\weapons\w_rif_famas.sw.vtx								trusted_source
-		models\weapons\w_rif_famas.vvd									trusted_source
-		models\weapons\w_rif_galil.dx80.vtx								trusted_source
-		models\weapons\w_rif_galil.dx90.vtx								trusted_source
-		models\weapons\w_rif_galil.mdl									trusted_source
-		models\weapons\w_rif_galil.phy									trusted_source
-		models\weapons\w_rif_galil.sw.vtx								trusted_source
-		models\weapons\w_rif_galil.vvd									trusted_source
-		models\weapons\w_rif_m4a1.dx80.vtx								trusted_source
-		models\weapons\w_rif_m4a1.dx90.vtx								trusted_source
-		models\weapons\w_rif_m4a1.mdl									trusted_source
-		models\weapons\w_rif_m4a1.phy									trusted_source
-		models\weapons\w_rif_m4a1.sw.vtx								trusted_source
-		models\weapons\w_rif_m4a1.vvd									trusted_source
-		models\weapons\w_rif_m4a1_silencer.dx80.vtx								trusted_source
-		models\weapons\w_rif_m4a1_silencer.dx90.vtx								trusted_source
-		models\weapons\w_rif_m4a1_silencer.mdl									trusted_source
-		models\weapons\w_rif_m4a1_silencer.phy									trusted_source
-		models\weapons\w_rif_m4a1_silencer.sw.vtx								trusted_source
-		models\weapons\w_rif_m4a1_silencer.vvd									trusted_source
-		models\weapons\w_rif_sg552.dx80.vtx								trusted_source
-		models\weapons\w_rif_sg552.dx90.vtx								trusted_source
-		models\weapons\w_rif_sg552.mdl									trusted_source
-		models\weapons\w_rif_sg552.phy									trusted_source
-		models\weapons\w_rif_sg552.sw.vtx								trusted_source
-		models\weapons\w_rif_sg552.vvd									trusted_source
-		models\weapons\w_shot_m3super90.dx80.vtx								trusted_source
-		models\weapons\w_shot_m3super90.dx90.vtx								trusted_source
-		models\weapons\w_shot_m3super90.mdl									trusted_source
-		models\weapons\w_shot_m3super90.phy									trusted_source
-		models\weapons\w_shot_m3super90.sw.vtx								trusted_source
-		models\weapons\w_shot_m3super90.vvd									trusted_source
-		models\weapons\w_shot_xm1014.dx80.vtx								trusted_source
-		models\weapons\w_shot_xm1014.dx90.vtx								trusted_source
-		models\weapons\w_shot_xm1014.mdl									trusted_source
-		models\weapons\w_shot_xm1014.phy									trusted_source
-		models\weapons\w_shot_xm1014.sw.vtx								trusted_source
-		models\weapons\w_shot_xm1014.vvd									trusted_source
-		models\weapons\w_smg_mac10.dx80.vtx								trusted_source
-		models\weapons\w_smg_mac10.dx90.vtx								trusted_source
-		models\weapons\w_smg_mac10.mdl									trusted_source
-		models\weapons\w_smg_mac10.phy									trusted_source
-		models\weapons\w_smg_mac10.sw.vtx								trusted_source
-		models\weapons\w_smg_mac10.vvd									trusted_source
-		models\weapons\w_smg_mp5.dx80.vtx								trusted_source
-		models\weapons\w_smg_mp5.dx90.vtx								trusted_source
-		models\weapons\w_smg_mp5.mdl									trusted_source
-		models\weapons\w_smg_mp5.phy									trusted_source
-		models\weapons\w_smg_mp5.sw.vtx								trusted_source
-		models\weapons\w_smg_mp5.vvd									trusted_source
-		models\weapons\w_smg_p90.dx80.vtx								trusted_source
-		models\weapons\w_smg_p90.dx90.vtx								trusted_source
-		models\weapons\w_smg_p90.mdl									trusted_source
-		models\weapons\w_smg_p90.phy									trusted_source
-		models\weapons\w_smg_p90.sw.vtx								trusted_source
-		models\weapons\w_smg_p90.vvd									trusted_source
-		models\weapons\w_smg_tmp.dx80.vtx								trusted_source
-		models\weapons\w_smg_tmp.dx90.vtx								trusted_source
-		models\weapons\w_smg_tmp.mdl									trusted_source
-		models\weapons\w_smg_tmp.phy									trusted_source
-		models\weapons\w_smg_tmp.sw.vtx								trusted_source
-		models\weapons\w_smg_tmp.vvd									trusted_source
-		models\weapons\w_smg_ump45.dx80.vtx								trusted_source
-		models\weapons\w_smg_ump45.dx90.vtx								trusted_source
-		models\weapons\w_smg_ump45.mdl									trusted_source
-		models\weapons\w_smg_ump45.phy									trusted_source
-		models\weapons\w_smg_ump45.sw.vtx								trusted_source
-		models\weapons\w_smg_ump45.vvd									trusted_source
-		models\weapons\w_snip_awp.dx80.vtx								trusted_source
-		models\weapons\w_snip_awp.dx90.vtx								trusted_source
-		models\weapons\w_snip_awp.mdl									trusted_source
-		models\weapons\w_snip_awp.phy									trusted_source
-		models\weapons\w_snip_awp.sw.vtx								trusted_source
-		models\weapons\w_snip_awp.vvd									trusted_source
-		models\weapons\w_snip_g3sg1.dx80.vtx								trusted_source
-		models\weapons\w_snip_g3sg1.dx90.vtx								trusted_source
-		models\weapons\w_snip_g3sg1.mdl									trusted_source
-		models\weapons\w_snip_g3sg1.phy									trusted_source
-		models\weapons\w_snip_g3sg1.sw.vtx								trusted_source
-		models\weapons\w_snip_g3sg1.vvd									trusted_source
-		models\weapons\w_snip_scout.dx80.vtx								trusted_source
-		models\weapons\w_snip_scout.dx90.vtx								trusted_source
-		models\weapons\w_snip_scout.mdl									trusted_source
-		models\weapons\w_snip_scout.phy									trusted_source
-		models\weapons\w_snip_scout.sw.vtx								trusted_source
-		models\weapons\w_snip_scout.vvd									trusted_source
-		models\weapons\w_snip_sg550.dx80.vtx								trusted_source
-		models\weapons\w_snip_sg550.dx90.vtx								trusted_source
-		models\weapons\w_snip_sg550.mdl									trusted_source
-		models\weapons\w_snip_sg550.phy									trusted_source
-		models\weapons\w_snip_sg550.sw.vtx								trusted_source
-		models\weapons\w_snip_sg550.vvd									trusted_source
-			////------------------------------------------
-			// 				Map textures
-			////------------------------------------------
-		materials\maps\...					trusted_source
-		materials\tile\...					trusted_source
-		//
-		materials\sprites\cbbl_smoke.vmt					trusted_source
-		materials\sprites\glow.vmt							trusted_source
-		materials\sprites\glow01.vmt						trusted_source
-		materials\sprites\glow03.vmt						trusted_source
-		materials\sprites\halo.vmt							trusted_source
-		materials\sprites\ledglow.vmt						trusted_source
-		materials\sprites\muzzleflash4.vmt					trusted_source
-		materials\sprites\xfireball3.vmt					trusted_source
-		materials\sprites\yelflare1.vmt						trusted_source
-		materials\sprites\yelflare2.vmt						trusted_source
-		//
-		materials\decals\...					trusted_source
-		materials\overlays\...					trusted_source
-		materials\carpet\...					trusted_source
-		materials\cstrike\...					trusted_source
-		materials\de_nuke\...					trusted_source
-		materials\detail\...					trusted_source
-		materials\fx\...						trusted_source
-		materials\halflife\...					trusted_source
-		materials\liquids\...					trusted_source
-		materials\test_speakers\...				trusted_source
-		materials\tools\...						trusted_source
-		//materials\environment maps\...			trusted_source
-		materials\glass\...					trusted_source						
-		materials\effects\...				trusted_source				
-		materials\concrete\...				trusted_source				
-		materials\brick\...					trusted_source					
-		materials\dev\...					trusted_source					
-		materials\ground\...				trusted_source				
-		materials\metal\...					trusted_source                 
-		materials\nature\...				trusted_source				
-		materials\nature				trusted_source				
-		materials\plaster\...				trusted_source				
-		materials\props\...					trusted_source				  
-		materials\skybox\...				trusted_source				
-		materials\stone\...					trusted_source					
-		materials\sun\...					trusted_source                     
-		materials\wood\...					trusted_source                  
-		materials\wood					trusted_source                  
-		materials\buildings\...				trusted_source               
-		materials\composite\...				trusted_source               
-		materials\de_dust\...				trusted_source
-		materials\de_aztec\...				trusted_source
-		materials\de_chateau\...			trusted_source
-		materials\de_piranesi\...			trusted_source
-		materials\de_prodigy\...			trusted_source
-		materials\de_tides\...				trusted_source
-		materials\de_train\...				trusted_source
-		materials\de_cbble\...				trusted_source
-		materials\cs_assault\...			trusted_source
-		materials\cs_havana\...				trusted_source
-		materials\cs_italy\...				trusted_source
-		materials\models\cs_havana\...				trusted_source
-		materials\models\cs_italy\...				trusted_source
-		materials\models\de_cbble\...				trusted_source
-		materials\models\de_chateau\...				trusted_source
-		materials\models\de_dust\...				trusted_source
-		materials\models\de_piranesi\...			trusted_source
-		materials\models\props\...					trusted_source
-		materials\models\props_debris\...			trusted_source
-		materials\models\props_foliage\...			trusted_source
-		materials\models\props_interiors\...		trusted_source
-		materials\models\props_junk\...				trusted_source
-		materials\models\props_pipes\...			trusted_source
-		materials\models\props_rooftop\...			trusted_source
-		materials\models\props_vehicles\...			trusted_source
-		materials\models\props_wasteland\...		trusted_source
-		materials\overviews\...					trusted_source
-		materials\custom\...					trusted_source
-			////------------------------------------------
-			//				   Map models
-			////------------------------------------------
-		models\props\...							trusted_source
-		models\props\de_dust\*.*					trusted_source
-		models\props\cs_office\...					trusted_source
-		models\props_c17\...						trusted_source
-		models\props_debris\...						trusted_source
-		models\props_foliage\...					trusted_source
-		models\props_industrial\...					trusted_source
-		models\props_interiors\...					trusted_source
-		models\props_junk\...						trusted_source
-		models\props_pipes\...						trusted_source
-		models\props_rooftop\...					trusted_source
-		models\props_vehicles\...					trusted_source
-		models\props_wasteland\...					trusted_source
-		models\shadertest\...						trusted_source
-			////------------------------------------------
-			//				 Player textures
-			////------------------------------------------
-		materials\models\player\...					trusted_source
-		materials\models\hostages\...				trusted_source
-			////------------------------------------------
-			//				  Player models
-			////------------------------------------------
-		models\characters\...				trusted_source
-		models\humans\...					trusted_source
-		models\player\...					trusted_source
-			////------------------------------------------
-			//				    Particles
-			////------------------------------------------
-		materials\particle\*.*							trusted_source
-		materials\particle\smoke1\...					trusted_source
-		materials\particle\antlion_goop3\...			trusted_source
-		materials\particle\droplets\...					trusted_source
-		materials\particle\fire_burning_character\...	trusted_source
-		materials\particle\fire_particle_2\...			trusted_source
-		materials\particle\fire_particle_4\...			trusted_source
-		materials\particle\fire_particle_6\...			trusted_source
-		materials\particle\fire_particle_7\...			trusted_source
-		materials\particle\fire_particle_8\...			trusted_source
-		materials\particle\old\...						trusted_source
-		materials\particle\particle_ring_wave_curl\...	trusted_source
-		materials\particle\pebble1\...					trusted_source
-		materials\particle\splash01\...					trusted_source
-		materials\particle\tinyfiresprites\...			trusted_source
-		materials\particle\vistasmokev1\...				trusted_source
-		materials\particle\water\...					trusted_source
-			////------------------------------------------
-			//				 		Sound
-			////------------------------------------------
-		sound\items\...							trusted_source
-		sound\physics\...						trusted_source
-		sound\player\*.*						trusted_source
-		sound\player\footsteps\*.*				trusted_source
-		sound\weapons\*.*						trusted_source
-			////------------------------------------------
-			//				 	   Resource
-			////------------------------------------------
-		resource\overviews\...							trusted_source
-			////------------------------------------------
-			//				     Server content
-			////------------------------------------------
-		//
-		// Use pure_server_full.txt instead, i don't remember if i used this file "pure_server_whitelist.txt"
-		// for removing server content from the whitelist system. It's been a while since i edited this files.
-		// 
-		// Config by NuJaaj
+		// [===]       Blocked custom mods       [===]
+		////------------------------------------------
+		//					   Weapons
+		////------------------------------------------
+	models\weapons\w_c4.dx80.vtx								trusted_source
+	models\weapons\w_c4.dx90.vtx								trusted_source
+	models\weapons\w_c4.mdl									trusted_source
+	models\weapons\w_c4.phy									trusted_source
+	models\weapons\w_c4.sw.vtx								trusted_source
+	models\weapons\w_c4.vvd									trusted_source
+	models\weapons\w_c4_planted.dx80.vtx								trusted_source
+	models\weapons\w_c4_planted.dx90.vtx								trusted_source
+	models\weapons\w_c4_planted.mdl									trusted_source
+	models\weapons\w_c4_planted.phy									trusted_source
+	models\weapons\w_c4_planted.sw.vtx								trusted_source
+	models\weapons\w_c4_planted.vvd									trusted_source
+	models\weapons\w_defuser.dx80.vtx								trusted_source
+	models\weapons\w_defuser.dx90.vtx								trusted_source
+	models\weapons\w_defuser.mdl									trusted_source
+	models\weapons\w_defuser.phy									trusted_source
+	models\weapons\w_defuser.sw.vtx								trusted_source
+	models\weapons\w_defuser.vvd									trusted_source
+	models\weapons\w_eq_eholster.dx80.vtx								trusted_source
+	models\weapons\w_eq_eholster.dx90.vtx								trusted_source
+	models\weapons\w_eq_eholster.mdl									trusted_source
+	models\weapons\w_eq_eholster.phy									trusted_source
+	models\weapons\w_eq_eholster.sw.vtx								trusted_source
+	models\weapons\w_eq_eholster.vvd									trusted_source
+	models\weapons\w_eq_eholster_elite.dx80.vtx								trusted_source
+	models\weapons\w_eq_eholster_elite.dx90.vtx								trusted_source
+	models\weapons\w_eq_eholster_elite.mdl									trusted_source
+	models\weapons\w_eq_eholster_elite.phy									trusted_source
+	models\weapons\w_eq_eholster_elite.sw.vtx								trusted_source
+	models\weapons\w_eq_eholster_elite.vvd									trusted_source
+	models\weapons\w_eq_flashbang.dx80.vtx								trusted_source
+	models\weapons\w_eq_flashbang.dx90.vtx								trusted_source
+	models\weapons\w_eq_flashbang.mdl									trusted_source
+	models\weapons\w_eq_flashbang.phy									trusted_source
+	models\weapons\w_eq_flashbang.sw.vtx								trusted_source
+	models\weapons\w_eq_flashbang.vvd									trusted_source
+	models\weapons\w_eq_flashbang_thrown.dx80.vtx								trusted_source
+	models\weapons\w_eq_flashbang_thrown.dx90.vtx								trusted_source
+	models\weapons\w_eq_flashbang_thrown.mdl									trusted_source
+	models\weapons\w_eq_flashbang_thrown.phy									trusted_source
+	models\weapons\w_eq_flashbang_thrown.sw.vtx								trusted_source
+	models\weapons\w_eq_flashbang_thrown.vvd									trusted_source
+	models\weapons\w_eq_fraggrenade.dx80.vtx								trusted_source
+	models\weapons\w_eq_fraggrenade.dx90.vtx								trusted_source
+	models\weapons\w_eq_fraggrenade.mdl									trusted_source
+	models\weapons\w_eq_fraggrenade.phy									trusted_source
+	models\weapons\w_eq_fraggrenade.sw.vtx								trusted_source
+	models\weapons\w_eq_fraggrenade.vvd									trusted_source
+	models\weapons\w_eq_fraggrenade_thrown.dx80.vtx								trusted_source
+	models\weapons\w_eq_fraggrenade_thrown.dx90.vtx								trusted_source
+	models\weapons\w_eq_fraggrenade_thrown.mdl									trusted_source
+	models\weapons\w_eq_fraggrenade_thrown.phy									trusted_source
+	models\weapons\w_eq_fraggrenade_thrown.sw.vtx								trusted_source
+	models\weapons\w_eq_fraggrenade_thrown.vvd									trusted_source
+	models\weapons\w_eq_smokegrenade.dx80.vtx								trusted_source
+	models\weapons\w_eq_smokegrenade.dx90.vtx								trusted_source
+	models\weapons\w_eq_smokegrenade.mdl									trusted_source
+	models\weapons\w_eq_smokegrenade.phy									trusted_source
+	models\weapons\w_eq_smokegrenade.sw.vtx								trusted_source
+	models\weapons\w_eq_smokegrenade.vvd									trusted_source
+	models\weapons\w_eq_smokegrenade_thrown.dx80.vtx								trusted_source
+	models\weapons\w_eq_smokegrenade_thrown.dx90.vtx								trusted_source
+	models\weapons\w_eq_smokegrenade_thrown.mdl									trusted_source
+	models\weapons\w_eq_smokegrenade_thrown.phy									trusted_source
+	models\weapons\w_eq_smokegrenade_thrown.sw.vtx								trusted_source
+	models\weapons\w_eq_smokegrenade_thrown.vvd									trusted_source
+	models\weapons\w_knife_ct.dx80.vtx								trusted_source
+	models\weapons\w_knife_ct.dx90.vtx								trusted_source
+	models\weapons\w_knife_ct.mdl									trusted_source
+	models\weapons\w_knife_ct.phy									trusted_source
+	models\weapons\w_knife_ct.sw.vtx								trusted_source
+	models\weapons\w_knife_ct.vvd									trusted_source
+	models\weapons\w_knife_t.dx80.vtx								trusted_source
+	models\weapons\w_knife_t.dx90.vtx								trusted_source
+	models\weapons\w_knife_t.mdl									trusted_source
+	models\weapons\w_knife_t.phy									trusted_source
+	models\weapons\w_knife_t.sw.vtx								trusted_source
+	models\weapons\w_knife_t.vvd									trusted_source
+	models\weapons\w_mach_m249para.dx80.vtx								trusted_source
+	models\weapons\w_mach_m249para.dx90.vtx								trusted_source
+	models\weapons\w_mach_m249para.mdl									trusted_source
+	models\weapons\w_mach_m249para.phy									trusted_source
+	models\weapons\w_mach_m249para.sw.vtx								trusted_source
+	models\weapons\w_mach_m249para.vvd									trusted_source
+	models\weapons\w_pist_deagle.dx80.vtx								trusted_source
+	models\weapons\w_pist_deagle.dx90.vtx								trusted_source
+	models\weapons\w_pist_deagle.mdl									trusted_source
+	models\weapons\w_pist_deagle.phy									trusted_source
+	models\weapons\w_pist_deagle.sw.vtx								trusted_source
+	models\weapons\w_pist_deagle.vvd									trusted_source
+	models\weapons\w_pist_elite.dx80.vtx								trusted_source
+	models\weapons\w_pist_elite.dx90.vtx								trusted_source
+	models\weapons\w_pist_elite.mdl									trusted_source
+	models\weapons\w_pist_elite.phy									trusted_source
+	models\weapons\w_pist_elite.sw.vtx								trusted_source
+	models\weapons\w_pist_elite.vvd									trusted_source
+	models\weapons\w_pist_elite_dropped.dx80.vtx								trusted_source
+	models\weapons\w_pist_elite_dropped.dx90.vtx								trusted_source
+	models\weapons\w_pist_elite_dropped.mdl									trusted_source
+	models\weapons\w_pist_elite_dropped.phy									trusted_source
+	models\weapons\w_pist_elite_dropped.sw.vtx								trusted_source
+	models\weapons\w_pist_elite_dropped.vvd									trusted_source
+	models\weapons\w_pist_elite_single.dx80.vtx								trusted_source
+	models\weapons\w_pist_elite_single.dx90.vtx								trusted_source
+	models\weapons\w_pist_elite_single.mdl									trusted_source
+	models\weapons\w_pist_elite_single.phy									trusted_source
+	models\weapons\w_pist_elite_single.sw.vtx								trusted_source
+	models\weapons\w_pist_elite_single.vvd									trusted_source
+	models\weapons\w_pist_fiveseven.dx80.vtx								trusted_source
+	models\weapons\w_pist_fiveseven.dx90.vtx								trusted_source
+	models\weapons\w_pist_fiveseven.mdl									trusted_source
+	models\weapons\w_pist_fiveseven.phy									trusted_source
+	models\weapons\w_pist_fiveseven.sw.vtx								trusted_source
+	models\weapons\w_pist_fiveseven.vvd									trusted_source
+	models\weapons\w_pist_glock18.dx80.vtx								trusted_source
+	models\weapons\w_pist_glock18.dx90.vtx								trusted_source
+	models\weapons\w_pist_glock18.mdl									trusted_source
+	models\weapons\w_pist_glock18.phy									trusted_source
+	models\weapons\w_pist_glock18.sw.vtx								trusted_source
+	models\weapons\w_pist_glock18.vvd									trusted_source
+	models\weapons\w_pist_p228.dx80.vtx								trusted_source
+	models\weapons\w_pist_p228.dx90.vtx								trusted_source
+	models\weapons\w_pist_p228.mdl									trusted_source
+	models\weapons\w_pist_p228.phy									trusted_source
+	models\weapons\w_pist_p228.sw.vtx								trusted_source
+	models\weapons\w_pist_p228.vvd									trusted_source
+	models\weapons\w_pist_usp.dx80.vtx								trusted_source
+	models\weapons\w_pist_usp.dx90.vtx								trusted_source
+	models\weapons\w_pist_usp.mdl									trusted_source
+	models\weapons\w_pist_usp.phy									trusted_source
+	models\weapons\w_pist_usp.sw.vtx								trusted_source
+	models\weapons\w_pist_usp.vvd									trusted_source
+	models\weapons\w_pist_usp_silencer.dx80.vtx								trusted_source
+	models\weapons\w_pist_usp_silencer.dx90.vtx								trusted_source
+	models\weapons\w_pist_usp_silencer.mdl									trusted_source
+	models\weapons\w_pist_usp_silencer.phy									trusted_source
+	models\weapons\w_pist_usp_silencer.sw.vtx								trusted_source
+	models\weapons\w_pist_usp_silencer.vvd									trusted_source
+	models\weapons\w_rif_ak47.dx80.vtx								trusted_source
+	models\weapons\w_rif_ak47.dx90.vtx								trusted_source
+	models\weapons\w_rif_ak47.mdl									trusted_source
+	models\weapons\w_rif_ak47.phy									trusted_source
+	models\weapons\w_rif_ak47.sw.vtx								trusted_source
+	models\weapons\w_rif_ak47.vvd									trusted_source
+	models\weapons\w_rif_aug.dx80.vtx								trusted_source
+	models\weapons\w_rif_aug.dx90.vtx								trusted_source
+	models\weapons\w_rif_aug.mdl									trusted_source
+	models\weapons\w_rif_aug.phy									trusted_source
+	models\weapons\w_rif_aug.sw.vtx								trusted_source
+	models\weapons\w_rif_aug.vvd									trusted_source
+	models\weapons\w_rif_famas.dx80.vtx								trusted_source
+	models\weapons\w_rif_famas.dx90.vtx								trusted_source
+	models\weapons\w_rif_famas.mdl									trusted_source
+	models\weapons\w_rif_famas.phy									trusted_source
+	models\weapons\w_rif_famas.sw.vtx								trusted_source
+	models\weapons\w_rif_famas.vvd									trusted_source
+	models\weapons\w_rif_galil.dx80.vtx								trusted_source
+	models\weapons\w_rif_galil.dx90.vtx								trusted_source
+	models\weapons\w_rif_galil.mdl									trusted_source
+	models\weapons\w_rif_galil.phy									trusted_source
+	models\weapons\w_rif_galil.sw.vtx								trusted_source
+	models\weapons\w_rif_galil.vvd									trusted_source
+	models\weapons\w_rif_m4a1.dx80.vtx								trusted_source
+	models\weapons\w_rif_m4a1.dx90.vtx								trusted_source
+	models\weapons\w_rif_m4a1.mdl									trusted_source
+	models\weapons\w_rif_m4a1.phy									trusted_source
+	models\weapons\w_rif_m4a1.sw.vtx								trusted_source
+	models\weapons\w_rif_m4a1.vvd									trusted_source
+	models\weapons\w_rif_m4a1_silencer.dx80.vtx								trusted_source
+	models\weapons\w_rif_m4a1_silencer.dx90.vtx								trusted_source
+	models\weapons\w_rif_m4a1_silencer.mdl									trusted_source
+	models\weapons\w_rif_m4a1_silencer.phy									trusted_source
+	models\weapons\w_rif_m4a1_silencer.sw.vtx								trusted_source
+	models\weapons\w_rif_m4a1_silencer.vvd									trusted_source
+	models\weapons\w_rif_sg552.dx80.vtx								trusted_source
+	models\weapons\w_rif_sg552.dx90.vtx								trusted_source
+	models\weapons\w_rif_sg552.mdl									trusted_source
+	models\weapons\w_rif_sg552.phy									trusted_source
+	models\weapons\w_rif_sg552.sw.vtx								trusted_source
+	models\weapons\w_rif_sg552.vvd									trusted_source
+	models\weapons\w_shot_m3super90.dx80.vtx								trusted_source
+	models\weapons\w_shot_m3super90.dx90.vtx								trusted_source
+	models\weapons\w_shot_m3super90.mdl									trusted_source
+	models\weapons\w_shot_m3super90.phy									trusted_source
+	models\weapons\w_shot_m3super90.sw.vtx								trusted_source
+	models\weapons\w_shot_m3super90.vvd									trusted_source
+	models\weapons\w_shot_xm1014.dx80.vtx								trusted_source
+	models\weapons\w_shot_xm1014.dx90.vtx								trusted_source
+	models\weapons\w_shot_xm1014.mdl									trusted_source
+	models\weapons\w_shot_xm1014.phy									trusted_source
+	models\weapons\w_shot_xm1014.sw.vtx								trusted_source
+	models\weapons\w_shot_xm1014.vvd									trusted_source
+	models\weapons\w_smg_mac10.dx80.vtx								trusted_source
+	models\weapons\w_smg_mac10.dx90.vtx								trusted_source
+	models\weapons\w_smg_mac10.mdl									trusted_source
+	models\weapons\w_smg_mac10.phy									trusted_source
+	models\weapons\w_smg_mac10.sw.vtx								trusted_source
+	models\weapons\w_smg_mac10.vvd									trusted_source
+	models\weapons\w_smg_mp5.dx80.vtx								trusted_source
+	models\weapons\w_smg_mp5.dx90.vtx								trusted_source
+	models\weapons\w_smg_mp5.mdl									trusted_source
+	models\weapons\w_smg_mp5.phy									trusted_source
+	models\weapons\w_smg_mp5.sw.vtx								trusted_source
+	models\weapons\w_smg_mp5.vvd									trusted_source
+	models\weapons\w_smg_p90.dx80.vtx								trusted_source
+	models\weapons\w_smg_p90.dx90.vtx								trusted_source
+	models\weapons\w_smg_p90.mdl									trusted_source
+	models\weapons\w_smg_p90.phy									trusted_source
+	models\weapons\w_smg_p90.sw.vtx								trusted_source
+	models\weapons\w_smg_p90.vvd									trusted_source
+	models\weapons\w_smg_tmp.dx80.vtx								trusted_source
+	models\weapons\w_smg_tmp.dx90.vtx								trusted_source
+	models\weapons\w_smg_tmp.mdl									trusted_source
+	models\weapons\w_smg_tmp.phy									trusted_source
+	models\weapons\w_smg_tmp.sw.vtx								trusted_source
+	models\weapons\w_smg_tmp.vvd									trusted_source
+	models\weapons\w_smg_ump45.dx80.vtx								trusted_source
+	models\weapons\w_smg_ump45.dx90.vtx								trusted_source
+	models\weapons\w_smg_ump45.mdl									trusted_source
+	models\weapons\w_smg_ump45.phy									trusted_source
+	models\weapons\w_smg_ump45.sw.vtx								trusted_source
+	models\weapons\w_smg_ump45.vvd									trusted_source
+	models\weapons\w_snip_awp.dx80.vtx								trusted_source
+	models\weapons\w_snip_awp.dx90.vtx								trusted_source
+	models\weapons\w_snip_awp.mdl									trusted_source
+	models\weapons\w_snip_awp.phy									trusted_source
+	models\weapons\w_snip_awp.sw.vtx								trusted_source
+	models\weapons\w_snip_awp.vvd									trusted_source
+	models\weapons\w_snip_g3sg1.dx80.vtx								trusted_source
+	models\weapons\w_snip_g3sg1.dx90.vtx								trusted_source
+	models\weapons\w_snip_g3sg1.mdl									trusted_source
+	models\weapons\w_snip_g3sg1.phy									trusted_source
+	models\weapons\w_snip_g3sg1.sw.vtx								trusted_source
+	models\weapons\w_snip_g3sg1.vvd									trusted_source
+	models\weapons\w_snip_scout.dx80.vtx								trusted_source
+	models\weapons\w_snip_scout.dx90.vtx								trusted_source
+	models\weapons\w_snip_scout.mdl									trusted_source
+	models\weapons\w_snip_scout.phy									trusted_source
+	models\weapons\w_snip_scout.sw.vtx								trusted_source
+	models\weapons\w_snip_scout.vvd									trusted_source
+	models\weapons\w_snip_sg550.dx80.vtx								trusted_source
+	models\weapons\w_snip_sg550.dx90.vtx								trusted_source
+	models\weapons\w_snip_sg550.mdl									trusted_source
+	models\weapons\w_snip_sg550.phy									trusted_source
+	models\weapons\w_snip_sg550.sw.vtx								trusted_source
+	models\weapons\w_snip_sg550.vvd									trusted_source
+		////------------------------------------------
+		// 				Map textures
+		////------------------------------------------
+	materials\maps\...					trusted_source
+	materials\tile\...					trusted_source
+	//
+	materials\sprites\cbbl_smoke.vmt					trusted_source
+	materials\sprites\glow.vmt							trusted_source
+	materials\sprites\glow01.vmt						trusted_source
+	materials\sprites\glow03.vmt						trusted_source
+	materials\sprites\halo.vmt							trusted_source
+	materials\sprites\ledglow.vmt						trusted_source
+	materials\sprites\muzzleflash4.vmt					trusted_source
+	materials\sprites\xfireball3.vmt					trusted_source
+	materials\sprites\yelflare1.vmt						trusted_source
+	materials\sprites\yelflare2.vmt						trusted_source
+	//
+	materials\decals\...					trusted_source
+	materials\overlays\...					trusted_source
+	materials\carpet\...					trusted_source
+	materials\cstrike\...					trusted_source
+	materials\de_nuke\...					trusted_source
+	materials\detail\...					trusted_source
+	materials\fx\...						trusted_source
+	materials\halflife\...					trusted_source
+	materials\liquids\...					trusted_source
+	materials\test_speakers\...				trusted_source
+	materials\tools\...						trusted_source
+	//materials\environment maps\...			trusted_source
+	materials\glass\...					trusted_source						
+	materials\effects\...				trusted_source				
+	materials\concrete\...				trusted_source				
+	materials\brick\...					trusted_source					
+	materials\dev\...					trusted_source					
+	materials\ground\...				trusted_source				
+	materials\metal\...					trusted_source                 
+	materials\nature\...				trusted_source				
+	materials\nature				trusted_source				
+	materials\plaster\...				trusted_source				
+	materials\props\...					trusted_source				  
+	materials\skybox\...				trusted_source				
+	materials\stone\...					trusted_source					
+	materials\sun\...					trusted_source                     
+	materials\wood\...					trusted_source                  
+	materials\wood					trusted_source                  
+	materials\buildings\...				trusted_source               
+	materials\composite\...				trusted_source               
+	materials\de_dust\...				trusted_source
+	materials\de_aztec\...				trusted_source
+	materials\de_chateau\...			trusted_source
+	materials\de_piranesi\...			trusted_source
+	materials\de_prodigy\...			trusted_source
+	materials\de_tides\...				trusted_source
+	materials\de_train\...				trusted_source
+	materials\de_cbble\...				trusted_source
+	materials\cs_assault\...			trusted_source
+	materials\cs_havana\...				trusted_source
+	materials\cs_italy\...				trusted_source
+	materials\models\cs_havana\...				trusted_source
+	materials\models\cs_italy\...				trusted_source
+	materials\models\de_cbble\...				trusted_source
+	materials\models\de_chateau\...				trusted_source
+	materials\models\de_dust\...				trusted_source
+	materials\models\de_piranesi\...			trusted_source
+	materials\models\props\...					trusted_source
+	materials\models\props_debris\...			trusted_source
+	materials\models\props_foliage\...			trusted_source
+	materials\models\props_interiors\...		trusted_source
+	materials\models\props_junk\...				trusted_source
+	materials\models\props_pipes\...			trusted_source
+	materials\models\props_rooftop\...			trusted_source
+	materials\models\props_vehicles\...			trusted_source
+	materials\models\props_wasteland\...		trusted_source
+	materials\overviews\...					trusted_source
+	materials\custom\...					trusted_source
+		////------------------------------------------
+		//				   Map models
+		////------------------------------------------
+	models\props\...							trusted_source
+	models\props\de_dust\*.*					trusted_source
+	models\props\cs_office\...					trusted_source
+	models\props_c17\...						trusted_source
+	models\props_debris\...						trusted_source
+	models\props_foliage\...					trusted_source
+	models\props_industrial\...					trusted_source
+	models\props_interiors\...					trusted_source
+	models\props_junk\...						trusted_source
+	models\props_pipes\...						trusted_source
+	models\props_rooftop\...					trusted_source
+	models\props_vehicles\...					trusted_source
+	models\props_wasteland\...					trusted_source
+	models\shadertest\...						trusted_source
+		////------------------------------------------
+		//				 Player textures
+		////------------------------------------------
+	materials\models\player\...					trusted_source
+	materials\models\hostages\...				trusted_source
+		////------------------------------------------
+		//				  Player models
+		////------------------------------------------
+	models\characters\...				trusted_source
+	models\humans\...					trusted_source
+	models\player\...					trusted_source
+		////------------------------------------------
+		//				    Particles
+		////------------------------------------------
+	materials\particle\*.*							trusted_source
+	materials\particle\smoke1\...					trusted_source
+	materials\particle\antlion_goop3\...			trusted_source
+	materials\particle\droplets\...					trusted_source
+	materials\particle\fire_burning_character\...	trusted_source
+	materials\particle\fire_particle_2\...			trusted_source
+	materials\particle\fire_particle_4\...			trusted_source
+	materials\particle\fire_particle_6\...			trusted_source
+	materials\particle\fire_particle_7\...			trusted_source
+	materials\particle\fire_particle_8\...			trusted_source
+	materials\particle\old\...						trusted_source
+	materials\particle\particle_ring_wave_curl\...	trusted_source
+	materials\particle\pebble1\...					trusted_source
+	materials\particle\splash01\...					trusted_source
+	materials\particle\tinyfiresprites\...			trusted_source
+	materials\particle\vistasmokev1\...				trusted_source
+	materials\particle\water\...					trusted_source
+		////------------------------------------------
+		//				 		Sound
+		////------------------------------------------
+	sound\items\...							trusted_source
+	sound\physics\...						trusted_source
+	sound\player\*.*						trusted_source
+	sound\player\footsteps\*.*				trusted_source
+	sound\weapons\*.*						trusted_source
+		////------------------------------------------
+		//				 	   Resource
+		////------------------------------------------
+	resource\overviews\...							trusted_source
+		////------------------------------------------
+		//				     Server content
+		////------------------------------------------
+	//
+	// Use pure_server_full.txt instead, i don't remember if i used this file "pure_server_whitelist.txt"
+	// for removing server content from the whitelist system. It's been a while since i edited this files.
+	// 
+	// Config by NuJaaj
 }
