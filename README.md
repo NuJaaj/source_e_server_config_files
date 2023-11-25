@@ -1,2 +1,2 @@
-# source_e_server_config_files
+## Source Engine Configuration server files
 Source Engine Server Configuration files
